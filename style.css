@@ -1,0 +1,895 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 5000px;
+    font-family: "Jost", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  perspective: 700px;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+justify-content: space-around;
+}
+.section1{
+    height: 900px;
+}
+.background{
+    background-image: url(images/Plant\ Life.jpg);
+    background-size: cover;
+    width: 25%;
+    height: 100vh;
+   position: absolute;
+   right: 10%;
+}
+.sec1_left{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background-color: rgba(205, 198, 198, 0.195);
+}
+.short{
+    color: rgb(73, 173, 73);
+    font-size: 35px;
+    font-family: "Clicker Script", serif;
+    font-weight: 650;
+    font-style: normal;
+}
+.long{
+    width: 70%;
+    margin: 15px 0px 15px 0px;
+    color: rgb(73, 173, 73);
+    font-size: 17px;
+  text-align: center;
+}
+.words{
+    font-style: italic;
+    font-size: 60px;
+    color: black;
+}
+.s1_button{
+    width: 150px;
+    height: 65px;
+    color: white;
+    background-color: rgb(12, 13, 12);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.s1_button:hover{
+    background-color: white;
+    color: black;
+}
+.logo_left{
+    display: flex;
+  align-items: center;
+}
+.lists{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     list-style: none;
+}
+.lists li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: larger;
+    position: relative;
+    z-index: 1;
+}
+.lists li a:hover{
+    color: green ;
+}
+.sec1_icons i{
+    color:black;
+}
+.sec1_icons i:hover{
+    color: rgb(10, 105, 10);
+    cursor: pointer;
+}
+.last_icon:hover .q_mark{
+transform: translateY(-4px);
+}
+.q_mark{
+ position: absolute;
+justify-content: center;
+align-items: center;
+ display: flex;
+ right: 0px;
+ top: 10px;
+ width: 19px;
+ height: 19px;
+ border-radius: 50%;
+ color: rgb(251, 251, 251);
+ background-color: rgb(10, 105, 10);
+ transition: all 0.5s;
+}
+.sec1_icons{
+    width: 10%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
+}
+.plants{
+    position: relative;
+}
+.drop_down_container{
+    width: 300px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 10px 0px;
+position: absolute;
+display: flex;
+transform: scale(0);
+list-style: none;
+background-color: rgb(238, 235, 235);
+z-index: 3;
+box-shadow: 0 4px 8px black;
+transition: all 1s;
+}
+.drop_list,.drop_list2{
+    list-style: none;
+    cursor: pointer;
+}
+.drop_list li,.drop_list2 li{
+    padding: 5px 10px;
+    font-size: larger;
+}
+.plants:hover .drop_down_container{
+    gap: 20px;
+    transform: scale(1);
+  
+}
+.drop_list li:hover{
+    transform: scale(1.03);
+    color: green;
+}
+.drop_list2 li:hover{
+    transform: scale(1.03);
+    color: green;
+}
+.page_line{
+   border-bottom: 2px dotted black;
+   width: 50%;
+}
+
+.logo{
+    color: rgb(10, 9, 9);
+    font-style: italic;
+    text-shadow:2px 2px 4px rgb(10, 105, 10) ;
+}
+.letter{
+    color: rgb(10, 105, 10);
+}
+.logo_pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(images/Univille\ Logo\ _\ SVG\ _\ Real\ Company\ _\ Alphabet\,\ Letter\ U\ Logo.jpg);
+    background-size: cover;
+}
+.under_header{
+    width: 100%;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-items: center;
+    height:40px ;
+    background-color: rgb(6, 77, 16);
+    color: white;
+    position: relative;
+}
+.under_header a{
+    color: rgba(74, 205, 126, 0.847);
+    margin-left: 10px;
+    font-size: larger;
+}
+.show_link:hover{
+    transform: scalex(1.2);
+}
+.show_link:hover ~.under_word{
+ transform: translateX(-13px);
+}
+.section2{
+    width: 90%;
+    height: 600px;
+    margin: auto;
+}
+.section3,.section5{
+    width: 93%;
+    margin: auto;
+}
+.section3{
+    height: 800px;
+}
+.section5{
+    height: 700px;
+}
+.sec2_container{
+    display: flex;
+    justify-content: space-between;
+}
+.sec3_container,.sec5_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pick{
+    background-size: cover;
+    height: 480px;
+    width: 28%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.sec2-pic1,.sec2-pic2,.sec2-pic3{
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+.w1,.w2{
+    font-size: 20px;
+    transition: all 1s;
+}
+.w1{
+    transform: translateY(2px);
+    color: white;
+    font-size: 25px;
+} 
+.w2{
+    transform: translateY(25px);
+    text-decoration: underline;
+    color: rgb(180, 187, 183);
+    cursor: pointer;
+}
+.w2:hover{
+  letter-spacing: 2px;
+}
+.pick:hover .w2{
+    transform: translateY(-35px);
+}
+.pick:hover .w1{
+    transform: translateY(-40px);
+}
+.pick:hover .pic{
+    transform: scale(1.15);
+}
+.shad{
+width: 100%;
+height: 30%;
+position: absolute;
+background: linear-gradient(rgba(181, 179, 179, 0.141),rgba(0, 0, 0, 0.889));
+bottom: 0;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+flex-direction: column;
+}
+.sec3_con1,.sec3_con2,.sec3-con3,.sec3_con4{
+    width: 24%;
+    height: 570px;
+    transform-style: preserve-3d;
+    margin-top: 60px;
+    position: relative;
+}
+.above{
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+.sec3-pick1,.sec3-pick2,.sec3-pick3,.sec3_hid1,.sec3_hid2,.sec3_hid3,.sec3_pick4,.sec3_hid4,.sec5-pick1,.sec5-pick2,.sec5-pick3,.sec5_hid1,.sec5_hid2,.sec5_hid3,.sec5_pick4,.sec5_hid4{
+    background-size: cover;
+width: 100%;
+height: 100%;
+}
+.sec3-pick1{
+    background-image: url(images/Nordic\ Ceramic\ Vase\ -\ A.jpg);
+}
+.sec3-pick2{
+    background-image: url(images/40\ Unbelievable\ Variegated\ Indoor\ Plants\ with\ Patterns.jpg);
+}
+.sec3-pick3{
+    background-image: url(images/a5a8f01e-9998-457b-a6cb-dab08c1576e2.jpg);
+}
+.sec3_pick4{
+    background-image: url(images/Our\ Top\ 13\ Picks\ for\ Modern\ Boho\ Style\ Planters.jpg);
+}
+.sec5-pick1{
+    background-image: url(images/Best\ Plant\ To\ Buy\ In\ April.jpg);
+}
+.sec5-pick2{
+    background-image: url(images/51\ Beautiful\ Indoor\ House\ Plants\ That\ Are\ Also\ Easy\ To\ Maintain.jpg);
+}
+.sec5-pick3{
+    background-image: url(images/5\ Unique\ Gifts\ for\ National\ BFF\ Day\ -\ Paisley\ &\ Sparrow.jpg);
+}
+.sec5_pick4{
+    background-image: url(images/Vayu\,\ the\ Scupltural\ Planter\ Made\ in\ the\ United\ States\ \(1\).jpg);
+}
+.icon{
+    width: 60%;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.603);
+    opacity: 0; 
+    transition:all 1.5s ease; 
+    position: absolute;
+    left: 20%; 
+    bottom: -45px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+  z-index: 1;
+}
+.i11{
+    font-size: 25px;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .sec3_con1:hover .icon{
+        bottom: 20px; 
+       opacity: 1;
+       }
+       .sec3_con2:hover .icon{
+        bottom: 20px; 
+       opacity: 1;
+       }
+       .sec3-con3:hover .icon{
+        bottom: 20px; 
+       opacity: 1;
+       }
+       .sec3_con4:hover .icon{
+        bottom: 20px; 
+       opacity: 1;
+       }
+       .i11:hover{
+        color: rgba(239, 233, 233, 0.779);
+        background-color:  rgb(34, 134, 34);
+    }
+    .i12:hover{
+        color: rgba(239, 233, 233, 0.779);
+        background-color: rgb(173, 140, 32); 
+    }
+    .sec3_hid1,.sec3_hid2,.sec3_hid3,.sec3_hid4, .sec5_hid1,.sec5_hid2,.sec5_hid3,.sec5_hid4{
+        position: absolute;
+        top: 0;
+        transition: 1s;
+         backface-visibility: hidden;
+    }
+    .sec3_hid1,.sec3_hid2,.sec3_hid3,.sec3_hid4{
+        transform: rotateY(180deg);
+    }
+    .sec5_hid1,.sec5_hid2,.sec5_hid3,.sec5_hid4{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    .sec3_hid3,.sec3_hid1,.sec3_hid2,.sec3_hid4{
+    background-image: url(images/florist\ water\ plant\ in\ glass\ \(1\).jpg);
+    }
+    .sec5_hid3,.sec5_hid2,.sec5_hid1,.sec5_hid4{
+      background-image: url(images/a5a8f01e-9998-457b-a6cb-dab08c1576e2.jpg);
+    }
+       .sec3_con1:hover .sec3_hid1{
+        transform:rotatey(0deg);
+    }
+    .sec3_con2:hover .sec3_hid2{
+        transform:rotatey(0deg);
+    }
+    .sec3-con3:hover .sec3_hid3{
+        transform:rotatey(0deg);
+    }
+    .sec3_con4:hover .sec3_hid4{
+        transform:rotatey(0deg);
+    }
+    .sec3_con1:hover .sec5_hid1{
+        transform: translatey(0);
+        opacity: 1;
+    }
+    .sec3_con2:hover .sec5_hid2{
+        transform: translatey(0);
+        opacity: 1;
+    }
+    .sec3-con3:hover .sec5_hid3{
+        transform: translatey(0);
+        opacity: 1;
+    }
+    .sec3_con4:hover .sec5_hid4{
+        transform: translatey(0);
+        opacity: 1;
+    }
+    .sec3_word_con{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid black 2px;
+        padding-bottom: 15px;
+    
+    }
+.sec3_left_word{
+font-size: 33px;
+font-weight: 500;
+color: black;
+}
+.sec3_right_word{
+    width:27%;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.li{
+    color: rgb(113, 112, 112);
+}
+.li2{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 27px;
+    text-decoration-color: rgb(12, 107, 12);
+}
+.under_con{
+    height: 20%;
+  text-align: center;
+}
+.w{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.sec3_con1:hover .w{
+    color: rgb(34, 144, 34);
+}
+.sec3_con2:hover .w{
+    color: rgb(34, 144, 34);
+}
+.sec3-con3:hover .w{
+    color: rgb(34, 144, 34);
+}
+.sec3_con4:hover .w{
+    color: rgb(34, 144, 34);
+}
+
+.num{
+    font-size: 20px;
+}
+.through{
+    text-decoration: line-through;
+    text-decoration-color: rgb(7, 172, 7);
+    text-decoration-thickness: 2.5px;
+   margin-left: 10px;
+}
+.left_angle{
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    font-size: 40px;
+    color: rgb(132, 132, 132);
+}
+.left_angle:hover{
+    color: green;
+}
+.rigrt_angle{
+    position: absolute;
+    top: 50%;
+    right:-15px;
+    font-size: 40px;
+    color: rgb(132, 132, 132);
+}
+.rigrt_angle:hover{
+color: green;
+}
+.sec5_container,.sec3_container{
+    position: relative;
+}
+.sec4_con{
+    height: 370px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between ;
+    text-align: center;
+    background-color: rgba(52, 147, 73, 0.167);
+    border-top: 1px solid rgb(135, 131, 131);
+    box-shadow: 0 -7px 10px -3px rgb(144, 144, 144),
+    0px 7px 10px -3px rgb(144, 144, 144);
+    ;
+}
+.sec4_h2{
+    font-size: 35px;
+}
+.sec4_p{
+    width: 50%;
+    font-size: 27px;
+    color: rgb(11, 84, 31);
+}
+.left_angle2{
+    left:10%;
+}
+.rigrt_angle2{
+    right: 10%;
+}
+.rigrt_angle2,.left_angle2{
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    color: rgb(26, 24, 24);
+}
+.rigrt_angle2:hover{
+    color: green;
+}
+.left_angle2:hover{
+    color: green;
+}
+.sec4_image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.img_con{
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.w_con{
+    display: flex;
+    flex-direction: column;
+}
+.w_con h2{
+    font-size: 18px;
+    color: rgb(4, 4, 4);
+}
+.sec5_h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 35px;
+}
+.section6{
+    height: 800px;
+    background-color:rgba(190, 189, 189, 0.334);
+    border-top: 1px solid rgb(135, 131, 131);
+    border-bottom: 1px solid rgb(135, 131, 131);
+    box-shadow: 0 -7px 10px -3px rgb(144, 144, 144),
+    0px 7px 10px -3px rgb(144, 144, 144);
+}
+.sec6_con1,.sec6_con2,.sec6_con3{
+    width: 27%;
+    transform-style: preserve-3d;
+}
+.sec6_con{
+  display: flex;
+  justify-content:space-evenly;
+  height: 630px;
+}
+.sec6_pick1,.sec6_pick2,.sec6_pick3{
+width: 100%;
+height: 66%;
+background-size: cover;
+transition: all 0.3s;
+}
+.pick3{
+    width: 100%;
+    transform-style:preserve-3d;
+    transition: all 0.3s;
+}
+.sec6_pick1{
+    background-image: url(images/22\ Types\ of\ Pothos\ Varieties\ _\ Best\ Pothos\ to\ Grow.jpg);
+}
+.sec6_pick2{
+    background-image: url(images/Our\ Top\ 13\ Picks\ for\ Modern\ Boho\ Style\ Planters.jpg);
+}
+.sec6_words{
+    height: 34%;
+}
+.con1_p2{
+    font-size: 25px;
+}
+.con1_p1{
+    color: black;
+}
+.con1_p3{
+    font-size: 20px;
+    color: rgb(129, 129, 129);
+}
+.con1_link{
+    font-size: 23px;
+    color: black;
+    transition: all 0.3s;
+}
+.con1_link:hover{
+    transform: scale(1.1) translateX(13px) ;
+}
+.con1_p1,.con1_p2,.con1_p3,.con1_link{
+    margin-top: 15px;
+}
+.sec6_h2{
+    text-align: center;
+padding: 40px 0px 40px 0px;
+   font-size: 35px;
+}
+.sec6_con1:hover .con1_p2{
+  color: green;
+}
+.sec6_con2:hover .con1_p2{
+    color: green;
+  }
+  .sec6_con3:hover .con1_p2{
+    color: green;
+  }
+.pick3:hover .sec6_pick3{
+  transform:  scale(1.05);
+}
+.sec6_pick2:hover{
+    transform: scale(1.05);
+}
+.sec6_pick1:hover{
+    transform:  scale(1.05);
+}
+.sec7_con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ height: 280px;
+}
+.icons_con{
+    position: relative;
+   display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+overflow: hidden;
+}
+.i23{
+    color: rgb(172, 172, 172);
+    font-size: 50px;
+    position: absolute;
+    transition: all 0.1s;
+    top: 0;
+}
+.i33{
+color: green;
+font-size: 50px;
+position: absolute;
+top:100%;
+transition: all 0.1s;
+}
+.sec7_con1:hover .i23{
+    top: -100%;
+}
+.sec7_con1:hover .i33{
+    top: 0;
+}
+.sec7_con2:hover .i23{
+    top: -100%;
+}
+.sec7_con2:hover .i33{
+    top: 0;
+}
+.sec7_con3:hover .i23{
+    top: -100%;
+}
+.sec7_con3:hover .i33{
+    top: 0;
+}
+.sec7_con4:hover .i23{
+    top: -100%;
+}
+.sec7_con4:hover .i33{
+    top: 0;
+}
+.sec7_con p{
+    font-size: 20px;
+    color: rgb(134, 134, 134);
+}
+.sec7_con p,.sec7_con h2{
+    text-align: center;
+}
+.sec8_con{
+    height: 550px;
+    background-color: rgb(9, 9, 9);
+    padding: 35 80 35 80;
+}
+.sec8_div1{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+.subscribe{
+    width: 28%;
+}
+.ico{
+    width: 10%;
+     height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sec8_div1 p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+.sec8_div1 h2{
+    font-size: 25px;
+    color: green;
+}
+.form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 60%;
+    height: 55px;
+    font-size: 23px;
+    padding: 10px;
+}
+.sub{
+    width: 22%;
+    height: 55px;
+    background-color: green;
+    margin-left: 10px;
+    color: white;
+  font-size: 23px;
+  border: none;
+}
+.sub:hover{
+transform: scale(1.07);
+}
+.ico i{
+    font-size: 25px;
+    width: 20%;
+    color: rgb(163, 160, 160);
+}
+.ico i:hover{
+    color: rgb(29, 161, 29);
+    transform: scale(1.2);
+}
+.sec8_div2{
+    display: flex;
+    justify-content: space-between;
+    padding: 55px;
+    border-bottom: 2px solid white;
+}
+.sec8_div2 p{
+    color: rgb(189, 188, 188);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.sec8_div2 p:hover{
+    text-decoration: underline;
+    transform: scalex(1.03);
+}
+.sec8_div2 h2{
+    color: white;
+}
+.sec8_div3 span{
+    color: rgb(189, 188, 188);
+}
+.sec8_div3 a{
+    color:rgb(7, 187, 7) ;
+    margin-left: 5px;
+}
+.heart{
+    color:rgb(7, 187, 7);
+    animation-name: anmi;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all 0.2;
+}
+@keyframes anmi{
+ 0%,100%{
+        transform: scale(0.6);
+        opacity: 0; 
+    }
+  
+   50%{
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+}
+.sec8_div3 a{
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.d2 h2,.d3 h2,.d4 h2,.d5 h2,.sec8_div2 p{
+margin-top: 10px;
+}
+.sec8_div3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+margin-top: 20px;
+}
+.sec8_div3 a:hover ~ .wcon{
+    transform: translateX(-8px);
+}
+.sec8_div3 a:hover{
+    transform: scaleX(1.18);
+    text-decoration: underline;
+}
+.wcon{
+    transition: all 0.5s;
+}
+.d1 h2,.d1 .home{
+    color: white;
+    margin-left: 10px;
+}
+.d1{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+.d1 h2{
+    font-size: 27px;
+}
+.plant{
+    font-size: 40px;
+}
+.shop{
+   font-size: 27px;
+   color: rgb(209, 207, 207);
+   margin-left: 10px;
+}
+.home{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    border-radius: 50%;
+    background-color: green;
+}
+.hov{
+    position: relative;
+    padding: 10px;
+}
+.hov::before{
+    content: "";
+    position: absolute;
+width: 0%;
+height:100%;
+left: 0;
+bottom: 0;
+border-bottom: 2px solid green;
+border-top: 2px solid green;
+transition: all 1s;
+}
+.hov:hover::before{
+    width: 106%;
+    height: 100%;
+}
+.hov::after{
+    content: "";
+    position: absolute;
+width: 100%;
+height: 0%;
+left: 0;
+bottom: 0;
+transition: all 0.6s;
+border-left: 2px solid green;
+border-right: 2px solid green;
+}
+.hov:hover::after{
+    width: 100%;
+    height:106%;
+}
